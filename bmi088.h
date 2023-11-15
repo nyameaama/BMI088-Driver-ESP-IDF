@@ -85,6 +85,7 @@ class BMI088_IMU {
         static double angle_read_roll();
 
         static double angle_read_yaw();
+
 };
 
 #endif //IMU
