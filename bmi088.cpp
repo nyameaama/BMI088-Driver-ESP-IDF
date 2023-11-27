@@ -352,13 +352,5 @@ double BMI088_IMU::angle_read_roll(){
 }
 
 double BMI088_IMU::angle_read_yaw(){
-    double previousTime, currentTime, elapsedTime;
-    previousTime = esp_timer_get_time();        // Previous time is stored before the actual time read
-    currentTime = esp_timer_get_time();           // Current time actual time read
-    elapsedTime = (currentTime - previousTime) / 1000; // Divide by 1000 to get seconds
-
-    double GyroZ = gyro_read_rawZ();
-    
-    double yaw = GyroZ * elapsedTime;
-    return yaw;
+    return 0;
 }
